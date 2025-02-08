@@ -44,7 +44,7 @@ if upload_file is not None:
         })
         st.write(missing_df)
     st.write(f'The total null values is {data.isnull().sum().sum()}')
-    st.write(f'The percentage of total null values is {(data.isnull().sum().sum()/data.size)}*100')
+    st.write(f'The percentage of total null values is {(data.isnull().sum().sum()/data.size)*100}')
     st.subheader('Data Summary')
     st.write(data.describe())
 
