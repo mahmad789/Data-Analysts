@@ -43,7 +43,7 @@ if upload_file is not None:
             'Percentage (%)': missing_percentage
         })
         st.write(missing_df)
-    
+    st.write(f'The total null values is {data.isnull().sum().sum()}')
     st.subheader('Data Summary')
     st.write(data.describe())
 
