@@ -11,7 +11,7 @@ import time
 st.write("Auto-refresh enabled to prevent sleeping...")
 
 while True:
-    time.sleep(600)  # Every 10 min refresh
+    time.sleep(6)  # Every 10 min refresh
     st.experimental_rerun()
 
 st.set_page_config(page_title='Data Dashborad', layout='wide')
