@@ -7,7 +7,12 @@ import streamlit as st
 import time
 
 
+# Auto Refresh after every 10 seconds
+st.write("Auto-refresh enabled to prevent sleeping...")
 
+while True:
+    time.sleep(600)  # Every 10 min refresh
+    st.experimental_rerun()
 
 st.set_page_config(page_title='Data Dashborad', layout='wide')
 
